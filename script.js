@@ -51,9 +51,10 @@ function calcola() {
 	} else if(s == "kmhkt") {
 		spiega = 'Un nodo equivale a un Miglio Nautico all ora [NM/h]. Dunque per passare da kilometri orari a nodi è sufficiente dividere il valore in nodi per 1.852 [NM/km] in modo da semplificare il km al numeratore'
 	
+	} else if (s == "kmhms") {
+		spiega = 'Per passare da kilometri orari a metri al secondo è innanzitutto necessario dividere il valore in km/h per 3600 [s/h] in modo da semplificare le h al denominatore. Successivamente sarà necessario moltiplicare per 1000 [m/km] e semplificare i kilometri.' 
+	
 	}
-	
-	
 		document.querySelector("#spiega").innerHTML = spiega;
 		
 	}
