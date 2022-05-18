@@ -58,10 +58,10 @@ function calcola() {
 		spiega = 'Per passare da m/s a km/h è necessario prima dividere il valore in m/s per 1000 [m/km] per trasformare i metri in km e successivamente moltiplicare per 3600 [s/h] per trasformare i secondi in ore. '
 	
 	} else if(s == "mmHghPa") {
-		spiega = 'Per eseguire la conversione da mmHg a hPa e viceversa è necessario applicare la proporzione 760 mmHg : 1013,25 hPa = mmHg [valore noto] : x [hPa]. Dove 760 mmHg e 1013,25 hPa sono i valori della pressione dell atmosfera standard al livello del mare.'
+		spiega = 'Per eseguire la conversione da mmHg a hPa e viceversa è necessario applicare la proporzione 760 mmHg : 1013,25 hPa = mmHg : hPa. Dove 760 mmHg e 1013,25 hPa sono i valori della pressione dell atmosfera standard al livello del mare.'
 	
 	} else if(s == "hPammHg") {
-		spiega = 'Per eseguire la conversione da mmHg a hPa e viceversa è necessario applicare la proporzione 760 mmHg : 1013,25 hPa = mmHg [valore noto] : x [hPa]. Dove 760 mmHg e 1013,25 hPa sono i valori della pressione dell atmosfera standard al livello del mare.'
+		spiega = 'Per eseguire la conversione da mmHg a hPa e viceversa è necessario applicare la proporzione 760 mmHg : 1013,25 hPa = mmHg : hPa. Dove 760 mmHg e 1013,25 hPa sono i valori della pressione dell atmosfera standard al livello del mare.'
 	}
 		document.querySelector("#spiega").innerHTML = spiega;
 		
