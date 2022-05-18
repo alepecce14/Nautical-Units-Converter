@@ -51,16 +51,16 @@ function calcola() {
 	} else if(s == "kmhkt") {
 		spiega = 'Un nodo equivale a un Miglio Nautico all ora [NM/h]. Dunque per passare da kilometri orari a nodi è sufficiente dividere il valore in nodi per 1.852 [NM/km] in modo da semplificare il km al numeratore'
 	
-	} else if (s == "kmhms") {
+	} else if(s == "kmhms") {
 		spiega = 'Per passare da kilometri orari a metri al secondo è innanzitutto necessario dividere il valore in km/h per 3600 [s/h] in modo da semplificare le h al denominatore. Successivamente sarà necessario moltiplicare per 1000 [m/km] e semplificare i kilometri.' 
 	
-	} else if (s == "mskmh") {
+	} else if(s == "mskmh") {
 		spiega = 'Per passare da m/s a km/h è necessario prima dividere il valore in m/s per 1000 [m/km] per trasformare i metri in km e successivamente moltiplicare per 3600 [s/h] per trasformare i secondi in ore. '
 		
-	} else if (s == "mmHghPa") {
+	} else if(s == "mmHghPa") {
 		spiega = 'Per eseguire la conversione da mmHg a hPa è necessario applicare la proporzione 760 mmHg : 1013,25 hPa = mmHg [valore noto] : x [hPa] . Dove 760 mmHg e 1013,25 hPa sono i valori della pressione dell atmosfera standard al livello del mare.'
 		
-	} else if (s == "hPammHg") {
+	} else if(s == "hPammHg") {
 		spiega = 'Per eseguire la conversione da hPa e mmHg è necessario applicare la proporzione 760 mmHg : 1013,25 hPa = x [mmHg] : hPa [valore noto] . Dove 760 mmHg e 1013,25 hPa sono i valori della pressione dell atmosfera standard al livello del mare.'
 	}
 		document.querySelector("#spiega").innerHTML = spiega;
